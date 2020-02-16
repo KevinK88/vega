@@ -253,6 +253,10 @@ export interface EncodeEntry {
   cursor?: ProductionRule<StringValueRef>;
   tooltip?: ProductionRule<StringValueRef>;
   zindex?: ProductionRule<NumericValueRef>;
+  tabindex?: ProductionRule<NumericValueRef>;
+  ariaLabel?: ProductionRule<StringValueRef>;
+  ariaRole?: ProductionRule<StringValueRef>;
+  ariaHidden?: ProductionRule<BooleanValueRef>;
   [k: string]: ProductionRule<ArbitraryValueRef> | undefined;
 }
 
