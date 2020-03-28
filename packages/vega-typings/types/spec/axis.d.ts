@@ -114,30 +114,6 @@ export interface Axis extends BaseAxis {
   zindex?: number;
 
   /**
-   * If set to `true`, removes the axis from the accessibility tree.
-   */
-  ariaHidden?: boolean | SignalRef;
-
-  /**
-   * A string that labels the axis group for accessibility.
-   */
-  ariaLabel?: string | SignalRef;
-
-  /**
-   * Sets the type of user interface element of the axis group for accessibility.
-   *
-   * __Default value__: `"graphics-object"`
-   */
-  ariaRole?: string | SignalRef;
-
-  /**
-   * A human-readable, author-localized description for the role of the axis group.
-   *
-   * __Default value__: `"axis"`
-   */
-  ariaRoleDescription?: string | SignalRef;
-
-  /**
    * Indicates that the axis can be focused, and where it participates in sequential keyboard navigation.
    */
   tabindex?: number | SignalRef;
@@ -176,6 +152,30 @@ export interface AxisEncode {
 }
 
 export interface BaseAxis {
+  /**
+   * If set to `true`, removes the axis from the accessibility tree.
+   */
+  ariaHidden?: boolean | SignalRef;
+
+  /**
+   * A string that labels the axis group for accessibility.
+   */
+  ariaLabel?: string | SignalRef;
+
+  /**
+   * Sets the type of user interface element of the axis group for accessibility.
+   *
+   * __Default value__: `"graphics-object"`
+   */
+  ariaRole?: string | SignalRef;
+
+  /**
+   * A human-readable, author-localized description for the role of the axis group.
+   *
+   * __Default value__: `"axis"`
+   */
+  ariaRoleDescription?: string | SignalRef;
+
   /**
    * Translation offset in pixels applied to the axis group mark x and y. If specified, overrides the default behavior of a 0.5 offset to pixel-align stroked lines.
    */
